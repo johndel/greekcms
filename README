@@ -1,8 +1,8 @@
 == Welcome to Greek CMS made in Rails 2.3.5
 
-Σκοπός του CMS είναι να βοηθήσει όσους θέλουν να ασχοληθούν με την rails, να δουν και να παίξουν με τον κώδικα ενός απλού CMS.
+The purpose of the CMS is to help someone to begin with rails, to see, play and have fun with the code of a simple CMS (rails version 2.3.5).
 
-Δοκιμάστε το στη διεύθυνση
+Try it on:
 
 http://demo.greeksolution.com/
 
@@ -13,3 +13,7 @@ http://demo.greeksolution.com/login
 Username: admin
 
 Password: admin
+
+Write any comments at: istoselidas@gmail.com
+
+Thank you and have fun!
