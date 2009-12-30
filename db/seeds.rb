@@ -1,0 +1,5 @@
+User.create!(:username => 'admin',:password => 'admin')
+Page.create!(:id => 1, :name => "Προκαθορισμένες ρυθμίσεις",:active =>true)
+Page.create!(:id => 2, :name => "Αναζήτηση",:active =>true)
+Page.create!(:id => 3, :name => "Αρχική Σελίδα",:active =>true)
+Page.create!(:id => 4, :name => "Eπικοινωνία",:permalink => "contact",:active =>true)

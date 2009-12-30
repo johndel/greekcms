@@ -1,0 +1,24 @@
+<%=@page.description%>
+<%unless @search_results.nil?%>
+Αναζήτηση του όρου: <strong><%= params[:search]%></strong><br />
+<%if @search_results.count == 0%>
+Δεν βρέθηκε κανένα αποτέλεσμα.
+<%elsif @search_results.count == 1%>
+Βρέθηκε ένα αποτέλεσμα.
+<br />Αποτελέσματα:
+<%else%>
+Βρεθηκαν <%=@search_results.count%> αποτελέσματα.
+<br />Αποτελέσματα:
+<%end-%>
+<ul>
+<% @search_results.each do |page| %>
+<% next if page.id == 1 || page.id == 2 %>
+
+				<% if page.id == 3 %>
+					<li><%=link_to page.name, root_url %></li>
+					<% else -%>				
+					<li><%=link_to page.name, page.permalink %></li>
+				<%end%>
+<% end %>
+</ul>
+<% end %>

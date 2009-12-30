@@ -1,0 +1,21 @@
+<div id="new_user">
+	<%= link_to 'Δημιουργία Νέου Χρήστη', new_user_path, :title => 'Νέου Χρήστη' %>
+</div>
+<ul id="headings" class="page_list">
+	<li>
+		
+		<span>Χρήστης</span>
+		<span>Διαγραφή</span>
+	</li>
+</ul>
+<ul id="users" class="page_list">
+<% @user.each do |users| %>
+	  <% next if users.id == 1 %>
+  <% content_tag_for(:li, users) do %>
+<span><%= link_to users.username,{:controller => :users, :action => :edit, :id => users.id}, :title => 'Γενικές ρυθμίσεις'%></span>
+	<%unless users.id == 1 %>
+  <span><%= link_to (image_tag 'admin/cross.png',:alt => "Διαγραφή"),users, :confirm => 'Είστε σίγουροι ότι θέλετε να πραγματοποιηθεί η διαγραφή;', :method => :delete,:title=>"Διαγραφή" %></span><%end%>
+	<% end %>
+	
+<% end %>
+</ul>

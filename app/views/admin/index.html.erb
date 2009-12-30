@@ -1,0 +1,37 @@
+<div id="top_page">
+	<%= link_to (image_tag 'admin/document-new.png',:alt => 'Νέα Σελίδα', :width => "50px")+'<br />Δημιουργία<br /> Νέας Σελίδας', new_page_path, :title => 'Νέα Σελίδα' %>
+</div>
+<div id="top_page">
+	<%=link_to (image_tag 'admin/edit-find-replace.png',:alt => 'Επεξεργασία Σελίδας Αναζήτησης', :width => "50px")+'<br />Επεξεργασία<br /> Αναζήτησης',{:controller=>:pages, :action => 'edit', :id => '2'}%>
+</div>
+	
+<ul id="headings" class="page_list">
+	<li>
+		<span>Ταξινόμηση</span>
+		<span>Όνομα Σελίδας</span>
+		<span>Url</span>
+		<span>Λειτουργίες</span>
+		<span>Διαγραφή</span>		
+	</li>
+</ul>
+<ul id="pages" class="page_list">
+<% @pages.each do |page| %>
+  <% content_tag_for(:li, page) do %>
+<span class="drag_handle"><%=image_tag('admin/draggable.jpg',:alt => "Μετακίνηση")%></span>
+<span><%= page.name %>&nbsp;</span>
+<span><%=h page.permalink %>&nbsp;</span>
+<span><%= link_to image_tag('admin/pencil.png',:alt => 'Επεξεργασία περιεχομένου'), {:controller => :pages, :action => :visual_edit, :id => page.id},:title => 'Επεξεργασία περιεχομένου'%>&nbsp;
+	<%= link_to image_tag('admin/config.png',:alt => 'Γενικές ρυθμίσεις'),edit_page_path(page) , :title => 'Γενικές ρυθμίσεις'%></span>
+	<% unless page.id == 2 || page.id == 3 || page.id == 4%>
+  <span><%= link_to (image_tag 'admin/cross.png',:alt => "Διαγραφή"),page, :confirm => 'Είστε σίγουροι ότι θέλετε να πραγματοποιηθεί η διαγραφή;', :method => :delete,:title=>"Διαγραφή" %></span><%end%>
+	<% end %>
+<% end %>
+</ul>
+ 
+<%= sortable_element('pages', :url => {:controller => 'admin', :action => 'sort'}) %>
+
+
+
+
+
+

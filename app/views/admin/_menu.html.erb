@@ -1,0 +1,8 @@
+<div id="menu_top"><%=link_to "Ιστοσελίδα",root_url%> | <%= link_to 'Αποσύνδεση', logout_path %></div>
+
+<ul>
+<li><%=link_to "Σελίδες",{:controller=>:admin, :action => 'index'}%></li>
+<li><%=link_to "Ρυθμίσεις",{:controller=>:admin, :action => 'configuration'}%></li>
+<li><%=link_to "Χρήστες",{:controller=>:users, :action => 'index'}%></li>
+<li><%=link_to "Μηνύματα",{:controller=>:contact, :action => 'show'}%></li>
+</ul>

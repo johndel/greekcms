@@ -1,0 +1,24 @@
+.drag_handle {
+	line-height: 30px;
+	display: block;
+}
+
+#top_page {
+	border: 1px solid #ccc;
+	text-align: center;
+	width: 100px;
+	padding: 10px;
+	float: left;
+	margin: 5px 5px 5px 0;
+}
+
+#top_page a {
+	display: block;
+	text-decoration: none;
+	color: #666;
+	line-height: 20px;
+}
+
+#top_page a:hover {
+	color: #679BDE;
+}

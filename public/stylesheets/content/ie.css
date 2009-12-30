@@ -1,0 +1,36 @@
+/****** Content  ******/
+
+
+#content {
+    width: 940px;
+    _position: relative;
+    _margin-right: 100px;
+}
+
+
+/**** Left Menu ****/
+#left-menu {
+    _margin: 0 30px 0 30px;
+}
+
+#main-content {
+    _margin:0;
+    _padding: 0;
+}
+
+#left-menu li {
+    *margin-top: -4px;
+    _margin-top:0px;
+}
+
+
+#left-menu li a {
+    _margin-top:-5px;
+}
+
+/**** Footer *****/
+#copyright {
+    *left: 70px;
+    *top: 100px;
+}
+

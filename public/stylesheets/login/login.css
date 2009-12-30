@@ -1,0 +1,70 @@
+body {
+	position: relative;
+	width: 300px;
+	background: #eee;
+	margin-top: 40px;	
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size:14px;
+}
+
+h1 {
+	display: block;
+	font-size: 26px;
+	color: #0B55C4;
+	font-weight: normal;
+	font-style: arial;
+}
+
+form {
+
+}
+
+label {
+	line-height: 20px;
+	float: left;
+	display: block;
+	margin-bottom: 15px;
+	font-weight: bold;
+}
+
+#login, #password {
+	float: right;
+	display: block;
+	clear: right;
+	margin-bottom: 15px;
+	width: 150px;
+}
+
+#content {
+	padding: 0 15px 15px 15px;
+	border: 1px solid #ccc;
+	background: white;
+}
+
+#login_button {
+	margin: 0px 0 -10px 0;
+	clear: both;
+	display: block;
+	float: right;
+}
+
+#flash_error {
+	font-size: 12px;
+	display:block;
+	font-style:normal;
+	padding:5px;
+	margin-bottom: 5px;
+	background: #FFCECE;
+	border: 1px solid #DF8F8F;
+}
+
+#flash_notice {
+	font-size: 12px;
+	display:block;
+	font-style:normal;
+	padding:5px;
+	margin-bottom: 5px;
+	background: #D5FFCE;
+	border: 1px solid #9ADF8F;
+}
+

@@ -1,0 +1,6 @@
+<li id="search">
+	<% form_tag ({:controller=> :pages,  :action => :search}, :method => :get) do %>
+	<%= text_field_tag :search, params[:search], :value => @search_value, :size => 30, :id => "search_text_box" %>
+	<%= image_submit_tag 'content/search.png',:alt => "Αναζήτηση", :id => "search_button"%>
+	<%end%>
+</li>

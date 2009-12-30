@@ -1,0 +1,22 @@
+<% form_for:contact, @contact,:url => {:action => "create"} do |f| %>
+
+  <p>
+    <%= f.label :name, "Όνομα" %><br />
+    <%= f.text_field :name %>
+  </p>
+  <p>
+    <%= f.label :email, "E-mail" %><span style="color: red">*</span><br />
+    <%= f.text_field :email %>
+  </p>
+  <p>
+    <%= f.label :subject, "Τίτλος" %><span style="color: red">*</span><br />
+    <%= f.text_field :subject %>
+  </p>
+  <p>
+    <%= f.label :body, "Μήνυμα" %><span style="color: red">*</span><br />
+    <%= f.text_area :body %>
+  </p>
+  <p>
+    <%= f.submit 'Αποστολή' %>
+  </p>
+<% end %>

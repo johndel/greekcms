@@ -1,0 +1,31 @@
+<h1>Σύνδεση</h1>
+
+<% form_tag sessions_path do %>
+
+    <%= label_tag :login, "Ψευδώνυμο" %>
+    <%= text_field_tag :login, params[:login] %>
+ 
+    <%= label_tag :password,"Κωδικός" %>
+    <%= password_field_tag :password %>
+<%= submit_tag "Σύνδεση",:id=>'login_button' %>
+  <div style="clear: both"></div>
+<% end -%>
+
+
+
+
+<%#<div id='login_form'>
+<% form_remote_tag(:url=>{:acrion=>sessions_path},
+:update=>'login_form') do %>
+<%#  <p>
+    <%= label_tag :login, "Ψευδώνυμο" %><%#<br />
+    <%= text_field_tag :login, params[:login] %>
+ <%# </p>
+  <p>
+    <%= label_tag :password,"Κωδικός" %><%#<br />
+    <%= password_field_tag :password %>
+ <%# </p>
+  <p><%= submit_tag "Σύνδεση" %><%#</p>
+<% end -%>
+<%#</div>
+<% =end%>

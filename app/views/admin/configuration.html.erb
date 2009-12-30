@@ -1,0 +1,26 @@
+<% form_for(@page) do |f| %>
+  <%= f.error_messages %>
+  <p>
+	<strong>Προκαθορισμένες Ρυθμίσεις</strong>
+  </p>
+  <p>
+    <%= f.label :title,"Τίτλος σελίδας" %><br />
+    <%= f.text_field :title, :size => 100 %>
+  </p>
+    <p>
+    <%= f.label :meta_description,"Σύντομη περιγραφή (για meta description)" %><br />
+    <%= f.text_field :meta_description, :size => 100 %>
+  </p>
+	<p>
+    <%= f.label :meta_keywords,"Λέξεις κλειδιά (για meta keywords)" %><br />
+    <%= f.text_field :meta_keywords, :size => 100 %>
+  </p>
+  <p>
+  	<%=label_tag :email, "E-mail του administrator" %><br />
+  	 <%= text_field_tag :email,@email, :size => 100 %>
+  	</p>
+  <p>
+    <%= f.submit 'Αποθήκευση' %>
+  </p>
+
+  <% end %>

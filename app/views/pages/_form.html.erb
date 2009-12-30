@@ -1,0 +1,40 @@
+<% form_for(@page) do |f| %>
+  <%= f.error_messages %>
+<% unless @page.id == 1%>
+  <p>
+    <%= f.label :name,"Όνομα σελίδας" %><br />
+    <%= f.text_field :name, :size => 100 %>
+  </p>
+  <% else %>
+  <p>
+	<strong>Όνομα σελίδας</strong><br />
+	<%= @page.name %>
+  </p>
+  <% end %>
+  <p>
+    <%= f.label :title,"Τίτλος σελίδας" %><br />
+    <%= f.text_field :title, :size => 100 %>
+  </p>
+    <p>
+    <%= f.label :meta_description,"Σύντομη περιγραφή (για meta description)" %><br />
+    <%= f.text_field :meta_description, :size => 100 %>
+  </p>
+	<p>
+    <%= f.label :meta_keywords,"Λέξεις κλειδιά (για meta keywords)" %><br />
+    <%= f.text_field :meta_keywords, :size => 100 %>
+  </p>
+  <% unless @page.id == 1 || @page.id == 2 || @page.id == 3 || @page.id == 4 %>
+   <p>
+    <%= f.label :permalink,"Διεύθυνση (url)" %><br />
+    <%= f.text_field :permalink, :size => 100 %>
+  </p>
+	<p>
+    <%= f.label :active,"Ενεργή" %><br />
+    <%= f.check_box :active %>
+  </p>
+  <% end %>
+  <p>
+    <%= f.submit 'Αποθήκευση' %>
+  </p>
+
+  <% end %>

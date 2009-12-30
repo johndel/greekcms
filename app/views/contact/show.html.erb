@@ -1,0 +1,25 @@
+<h1>Λίστα μηνυμάτων</h1>
+
+<ul id="headings" class="page_list">
+		<li>
+    <span>Όνομα</span>
+    <span>Email</span>
+    <span>Τίτλος</span>
+    <span>Λειτουργίες</span>
+     <span>Διαγραφή</span>
+  </li>
+  </ul>
+  <ul id="pages" class="page_list">
+<% @contact.each do |contact| %>
+  <li>
+    <span><%=h contact.name %></span>
+    <span><%=h contact.email %></span>
+    <span><%=h contact.subject %></span>
+    <span><%= link_to 'Προβολή', :controller=> :contact, :action => :edit,:id => contact.id %></span><span><%= link_to (image_tag 'admin/cross.png',:alt => "Διαγραφή"), {:action => :destroy, :id => contact.id}, :confirm => 'Είστε σίγουροι ότι θέλετε να πραγματοποιηθεί η διαγραφή;', :method => :delete,:title => 'Διαγραφή' %></span>
+  </li>
+<% end %>
+</ul>
+
+<br />
+
+<%#= link_to 'New contact', new_contact_path %>

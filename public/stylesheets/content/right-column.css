@@ -1,0 +1,50 @@
+#right-column {
+	float: left;
+	width: 210px;
+}
+
+#right-column .h1-start {
+	margin-top: 10px;
+	height: 36px;
+	margin-right: -11px;
+	*position: relative;
+	*right: -3px;
+	width: 7px;
+	float: right;
+	background: url('../../images/content/h1-end-right.gif') no-repeat;
+}
+
+#right-column h1 {
+	margin-right: -4px;
+	margin-top: 10px;
+	float: right;
+	display: block;
+	height: 32px;
+	color: #fff;
+	font-size: 14px;
+	line-height: 28px;
+	padding: 0 10px 0 5px;
+	background: url('../../images/content/h1-bg.gif') repeat-x;
+}
+
+#right-column .h1-end {
+	margin-right: 0px;
+	margin-top: 10px;
+	float: right;
+	width: 4px;
+	height: 32px;
+	background: url('../../images/content/h1-start-right.gif') no-repeat;
+	
+}
+
+#right-column p {
+	padding: 5px;
+	clear: both;
+}
+
+#right-column #logo {
+	float: right;
+	margin-right: 50px;
+	width: 115px;
+	height: 138px;
+}

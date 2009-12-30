@@ -1,0 +1,292 @@
+
+
+Processing ContactController#new (for 127.0.0.1 at 2009-12-19 13:12:48) [GET]
+  Parameters: {"action"=>"new", "controller"=>"contact"}
+
+ActiveRecord::StatementInvalid (Mysql::Error: Table 'cms_production.contact' doesn't exist: SHOW FIELDS FROM `contact`):
+  app/controllers/contact_controller.rb:18:in `new'
+  app/controllers/contact_controller.rb:18:in `new'
+
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ContactController#new (for 127.0.0.1 at 2009-12-19 13:16:32) [GET]
+  Parameters: {"action"=>"new", "controller"=>"contact"}
+
+ActiveRecord::StatementInvalid (Mysql::Error: Table 'cms_production.contact' doesn't exist: SHOW FIELDS FROM `contact`):
+  app/controllers/contact_controller.rb:18:in `new'
+  app/controllers/contact_controller.rb:18:in `new'
+
+Rendering rescues/layout (internal_server_error)
+
+
+Processing PagesController#show (for 127.0.0.1 at 2009-12-19 13:47:49) [GET]
+  Parameters: {"action"=>"show", "id"=>3, "controller"=>"pages"}
+Rendering template within layouts/content
+Rendering pages/show
+Completed in 79ms (View: 16, DB: 0) | 200 OK [http://127.0.0.1/]
+
+
+Processing AdminController#index (for 127.0.0.1 at 2009-12-19 14:01:00) [GET]
+  Parameters: {"action"=>"index", "controller"=>"admin"}
+Redirected to http://127.0.0.1:3000/login
+Filter chain halted as [:login_required] rendered_or_redirected.
+Completed in 0ms (DB: 0) | 302 Found [http://127.0.0.1/admin]
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2009-12-19 14:01:00) [GET]
+  Parameters: {"action"=>"new", "controller"=>"sessions"}
+Rendering template within layouts/login
+Rendering sessions/new
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://127.0.0.1/login]
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2009-12-19 14:01:03) [POST]
+  Parameters: {"commit"=>"Σύνδεση", "action"=>"create", "authenticity_token"=>"aH4g4y4Krm5ua5DeHXLpGb64AhKC1JPMM8FWJeBD9Mc=", "controller"=>"sessions", "login"=>"admin", "password"=>"[FILTERED]"}
+Redirected to http://127.0.0.1:3000/admin
+Completed in 62ms (DB: 0) | 302 Found [http://127.0.0.1/sessions]
+
+
+Processing AdminController#index (for 127.0.0.1 at 2009-12-19 14:01:04) [GET]
+  Parameters: {"action"=>"index", "controller"=>"admin"}
+Rendering template within layouts/admin
+Rendering admin/index
+Completed in 47ms (View: 47, DB: 0) | 200 OK [http://127.0.0.1/admin]
+
+
+Processing AdminController#index (for 127.0.0.1 at 2009-12-19 14:01:09) [GET]
+  Parameters: {"action"=>"index", "controller"=>"admin"}
+Rendering template within layouts/admin
+Rendering admin/index
+Completed in 31ms (View: 31, DB: 0) | 200 OK [http://127.0.0.1/admin]
+
+
+Processing AdminController#index (for 127.0.0.1 at 2009-12-19 14:01:16) [GET]
+  Parameters: {"action"=>"index", "controller"=>"admin"}
+Rendering template within layouts/admin
+Rendering admin/index
+Completed in 47ms (View: 47, DB: 0) | 200 OK [http://127.0.0.1/admin]
+
+
+Processing AdminController#index (for 127.0.0.1 at 2009-12-19 14:01:18) [GET]
+  Parameters: {"action"=>"index", "controller"=>"admin"}
+Rendering template within layouts/admin
+Rendering admin/index
+Completed in 31ms (View: 31, DB: 0) | 200 OK [http://127.0.0.1/admin]
+
+
+Processing AdminController#index (for 127.0.0.1 at 2009-12-19 14:01:25) [GET]
+  Parameters: {"action"=>"index", "controller"=>"admin"}
+Rendering template within layouts/admin
+Rendering admin/index
+Completed in 31ms (View: 31, DB: 0) | 200 OK [http://127.0.0.1/admin]
+
+
+Processing AdminController#index (for 127.0.0.1 at 2009-12-19 14:01:28) [GET]
+  Parameters: {"action"=>"index", "controller"=>"admin"}
+Rendering template within layouts/admin
+Rendering admin/index
+Completed in 47ms (View: 47, DB: 0) | 200 OK [http://127.0.0.1/admin]
+
+
+Processing AdminController#configuration (for 127.0.0.1 at 2009-12-19 14:01:32) [GET]
+  Parameters: {"action"=>"configuration", "controller"=>"admin"}
+Rendering template within layouts/admin
+Rendering admin/configuration
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://127.0.0.1/admin/configuration]
+
+
+Processing AdminController#images to ico (for 127.0.0.1 at 2009-12-19 14:01:32) [GET]
+  Parameters: {"format"=>"ico", "action"=>"images", "id"=>"favicon", "controller"=>"admin"}
+
+ActionController::UnknownAction (No action responded to images. Actions: bootstrap_page, choose_layout, configuration, current_user, expire_all_pages, index, logged_in?, login_required, redirect_to_target_or_default, rescue_action_in_public, and sort):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing UsersController#index (for 127.0.0.1 at 2009-12-19 14:01:33) [GET]
+  Parameters: {"action"=>"index", "controller"=>"users"}
+Rendering template within layouts/admin
+Rendering users/index
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://127.0.0.1/users]
+
+
+Processing AdminController#index (for 127.0.0.1 at 2009-12-19 14:01:35) [GET]
+  Parameters: {"action"=>"index", "controller"=>"admin"}
+Rendering template within layouts/admin
+Rendering admin/index
+Completed in 47ms (View: 47, DB: 0) | 200 OK [http://127.0.0.1/admin]
+
+
+Processing AdminController#images to ico (for 127.0.0.1 at 2009-12-19 14:01:35) [GET]
+  Parameters: {"format"=>"ico", "action"=>"images", "id"=>"favicon", "controller"=>"admin"}
+
+ActionController::UnknownAction (No action responded to images. Actions: bootstrap_page, choose_layout, configuration, current_user, expire_all_pages, index, logged_in?, login_required, redirect_to_target_or_default, rescue_action_in_public, and sort):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing AdminController#index (for 127.0.0.1 at 2009-12-19 14:01:37) [GET]
+  Parameters: {"action"=>"index", "controller"=>"admin"}
+Rendering template within layouts/admin
+Rendering admin/index
+Completed in 31ms (View: 31, DB: 0) | 200 OK [http://127.0.0.1/admin]
+
+
+Processing AdminController#index (for 127.0.0.1 at 2009-12-19 14:04:51) [GET]
+  Parameters: {"action"=>"index", "controller"=>"admin"}
+Rendering template within layouts/admin
+Rendering admin/index
+Completed in 46ms (View: 46, DB: 0) | 200 OK [http://127.0.0.1/admin]
+
+
+Processing AdminController#index (for 127.0.0.1 at 2009-12-19 14:04:56) [GET]
+  Parameters: {"action"=>"index", "controller"=>"admin"}
+Rendering template within layouts/admin
+Rendering admin/index
+Completed in 47ms (View: 32, DB: 0) | 200 OK [http://127.0.0.1/admin]
+
+
+Processing AdminController#configuration (for 127.0.0.1 at 2009-12-19 14:04:57) [GET]
+  Parameters: {"action"=>"configuration", "controller"=>"admin"}
+Rendering template within layouts/admin
+Rendering admin/configuration
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://127.0.0.1/admin/configuration]
+
+
+Processing AdminController#index (for 127.0.0.1 at 2009-12-19 14:04:59) [GET]
+  Parameters: {"action"=>"index", "controller"=>"admin"}
+Rendering template within layouts/admin
+Rendering admin/index
+Completed in 31ms (View: 31, DB: 0) | 200 OK [http://127.0.0.1/admin]
+
+
+Processing UsersController#index (for 127.0.0.1 at 2009-12-19 14:05:07) [GET]
+  Parameters: {"action"=>"index", "controller"=>"users"}
+Rendering template within layouts/admin
+Rendering users/index
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://127.0.0.1/users]
+
+
+Processing ContactController#show (for 127.0.0.1 at 2009-12-19 14:05:09) [GET]
+  Parameters: {"action"=>"show", "controller"=>"contact"}
+Rendering template within layouts/admin
+Rendering contact/show
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://127.0.0.1/contact/show]
+
+
+Processing ContactController#images to ico (for 127.0.0.1 at 2009-12-19 14:05:09) [GET]
+  Parameters: {"format"=>"ico", "action"=>"images", "id"=>"favicon", "controller"=>"contact"}
+
+ActionController::UnknownAction (No action responded to images. Actions: bootstrap_page, choose_layout, contact_layout, create, current_user, destroy, edit, expire_all_pages, index, logged_in?, login_required, new, redirect_to_target_or_default, rescue_action_in_public, show, and update):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing AdminController#configuration (for 127.0.0.1 at 2009-12-19 14:05:11) [GET]
+  Parameters: {"action"=>"configuration", "controller"=>"admin"}
+Rendering template within layouts/admin
+Rendering admin/configuration
+Completed in 31ms (View: 15, DB: 0) | 200 OK [http://127.0.0.1/admin/configuration]
+
+
+Processing ContactController#images to ico (for 127.0.0.1 at 2009-12-19 14:05:12) [GET]
+  Parameters: {"format"=>"ico", "action"=>"images", "id"=>"favicon", "controller"=>"contact"}
+
+ActionController::UnknownAction (No action responded to images. Actions: bootstrap_page, choose_layout, contact_layout, create, current_user, destroy, edit, expire_all_pages, index, logged_in?, login_required, new, redirect_to_target_or_default, rescue_action_in_public, show, and update):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing AdminController#index (for 127.0.0.1 at 2009-12-19 14:05:12) [GET]
+  Parameters: {"action"=>"index", "controller"=>"admin"}
+Rendering template within layouts/admin
+Rendering admin/index
+Completed in 31ms (View: 31, DB: 0) | 200 OK [http://127.0.0.1/admin]
+
+
+Processing AdminController#configuration (for 127.0.0.1 at 2009-12-19 14:05:13) [GET]
+  Parameters: {"action"=>"configuration", "controller"=>"admin"}
+Rendering template within layouts/admin
+Rendering admin/configuration
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://127.0.0.1/admin/configuration]
+
+
+Processing AdminController#index (for 127.0.0.1 at 2009-12-19 14:05:16) [GET]
+  Parameters: {"action"=>"index", "controller"=>"admin"}
+Rendering template within layouts/admin
+Rendering admin/index
+Completed in 47ms (View: 47, DB: 0) | 200 OK [http://127.0.0.1/admin]
+
+
+Processing PagesController#visual_edit (for 127.0.0.1 at 2009-12-19 14:05:50) [GET]
+  Parameters: {"action"=>"visual_edit", "id"=>"9", "controller"=>"pages"}
+Rendering template within layouts/content
+Rendering pages/visual_edit
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://127.0.0.1/pages/visual_edit/9]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-12-19 14:05:50) [GET]
+
+ActionController::RoutingError (No route matches "/pages/visual_edit/images/favicon.ico" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-12-19 14:05:53) [GET]
+
+ActionController::RoutingError (No route matches "/pages/visual_edit/images/favicon.ico" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing PagesController#edit (for 127.0.0.1 at 2009-12-19 14:06:03) [GET]
+  Parameters: {"action"=>"edit", "id"=>"9", "controller"=>"pages"}
+Rendering template within layouts/admin
+Rendering pages/edit
+Completed in 15ms (View: 15, DB: 0) | 200 OK [http://127.0.0.1/pages/9/edit]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-12-19 14:06:03) [GET]
+
+ActionController::RoutingError (No route matches "/pages/9/images/favicon.ico" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-12-19 14:06:06) [GET]
+
+ActionController::RoutingError (No route matches "/pages/9/images/favicon.ico" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-12-20 02:45:01) [GET]
+
+ActionController::RoutingError (No route matches "/images/favicon.ico" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-12-20 02:45:03) [GET]
+
+ActionController::RoutingError (No route matches "/images/favicon.ico" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing PagesController#show (for 127.0.0.1 at 2009-12-20 02:46:44) [GET]
+  Parameters: {"permalink"=>"download", "action"=>"show", "controller"=>"pages"}
+Rendering template within layouts/content
+Rendering pages/show
+Completed in 1859ms (View: 1594, DB: 79) | 200 OK [http://127.0.0.1/download]

@@ -1,0 +1,11 @@
+			<% @all_pages.each do |page| 
+				if page.id == @page.id%>
+					<li id="here"><%= page.name %></li>
+				<% else -%>
+					<% if page.id == 3 %>
+					<li><%=link_to page.name, root_url %></li>
+					<% else -%>				
+					<li><%=link_to page.name, page.permalink %></li>
+					<%end%>
+				<%end%>
+			<%end%>

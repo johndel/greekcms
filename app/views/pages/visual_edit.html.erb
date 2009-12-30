@@ -1,0 +1,13 @@
+<% form_for(@page) do |f| %>
+<p style="margin-top: -15px">
+    <%= f.cktext_area :description, :toolbar=> 'Full',:width => '725px', :height => '200px' %>
+</p>
+  
+    <p>
+    <%= f.submit 'Αποθήκευση' %>
+  </p>
+  <%= link_to 'Back', :controller => :admin, :action => :index %>
+
+  
+
+  <% end %>
